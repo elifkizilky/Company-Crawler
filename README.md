@@ -47,18 +47,18 @@ This will create a JSON file _results_data_second_phase.json_ containing data fo
 3. **Third Phase: FastAPI Server**
 Ensure docker is running:
 
-    docker-compose up --build
+       docker-compose up --build
 
 The FastAPI server can be accessed at http://127.0.0.1:8000 after starting the Docker containers. Use the following API endpoints:
 
 - POST /trigger-data-fetch/:
 Triggers the data fetching and analysis operation. Returns a task ID.
 
-    curl -X POST "http://127.0.0.1:8000/trigger-data-fetch/"
+      curl -X POST "http://127.0.0.1:8000/trigger-data-fetch/"
 
 - GET /task-status/{task_id}:
 Retrieves the status of the data fetching and analysis operation using the provided task ID.
 
-    curl -X GET "http://127.0.0.1:8000/task-status/{task_id}"
+      curl -X GET "http://127.0.0.1:8000/task-status/{task_id}"
 
 
