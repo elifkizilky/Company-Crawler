@@ -1,4 +1,4 @@
-# Company-Crawling
+# Company-Crawler
 
 This repository contains the source code for data crawling study, which includes a multi-stage process to fetch, analyze, and serve enterprise and startup data using FastAPI, Celery, and Redis within a Dockerized environment.
 
