@@ -43,3 +43,6 @@ def fetch_corporate_page(page):
     else:
         raise Exception(f"Failed to fetch data for page {page}. HTTP status code: {response.status_code}")
 
+@app.task
+def add(x, y):
+    return x + y

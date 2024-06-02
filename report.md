@@ -36,3 +36,16 @@ To try the GET API:
 
     curl -X GET "http://127.0.0.1:8000/task-status/{task_id}"
 
+## Docker Integration
+To run the project in a Dockerized environment, you need to use Docker Compose, which orchestrates the startup and interconnection of the FastAPI server, Celery worker, and Redis services. Here's how to start the containers:
+
+Build and start services:
+
+    docker-compose up --build
+
+To stop the services:
+
+    docker-compose down
+
+This setup ensures that all components of the application are containerized, allowing for easy deployment and scalability.
+

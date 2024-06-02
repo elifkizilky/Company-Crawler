@@ -41,5 +41,6 @@ if response.status_code == 200:
     data = response.json()
     with open("./top_ranked_corporates.json", "w") as f:
         json.dump(data, f, indent=4)
+    print("Fetched data successfully!")
 else:
     print(f"Failed to fetch data. HTTP Status Code: {response.status_code}")
